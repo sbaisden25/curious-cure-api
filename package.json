@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sbaisden25/curious-cure-api#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "node": "^17.7.2"
   }

@@ -1,5 +1,14 @@
 var express = require("express");
 var app = express();
+var cors = require('cors');
+
+app.use(
+    cors({
+        credentials: true,
+        origin: true
+    })
+);
+app.options('*', cors());
 
 const articles = require("./articles.json");
 
