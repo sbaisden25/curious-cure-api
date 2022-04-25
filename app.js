@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 8080;
 const articles = require("./articles.json");
 
 app.listen(PORT, () => {
- console.log("Server running on port 3000");
+ console.log("Server running on port 8080");
 });
 
 
@@ -21,6 +21,6 @@ app.get("/", (req, res) => {
 })
 
 app.get("/yo", (req, res) => {
-    res.json.send(url + random_article())
+    res.json(url + random_article())
 })
 
