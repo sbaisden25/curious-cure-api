@@ -1,11 +1,13 @@
 var express = require("express");
 var app = express();
+cors = require('cors');
+app.use(cors({
+    progin: '*',
+}));
 
-const headers = {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET",
-    "Access-Control-Allow-Headers": "Content-Type",
-};
+
+
+
 
 const PORT = process.env.PORT || 8080;
 
@@ -27,8 +29,7 @@ app.get("/", (req, res) => {
 
     const article = url + random_article()
     const json = JSON.stringify({ article: article})
-    res.send(json,
-        headers);
+    res.send(json);
     
 })
 
