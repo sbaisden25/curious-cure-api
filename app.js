@@ -16,11 +16,12 @@ function random_article() {
     return articles[Math.floor(Math.random() * articles.length)];
 }
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-})
 
-app.get("/yo", (req, res) => {
-    res.json(url + random_article())
+app.get("/", (req, res) => {
+
+    const article = url + random_article()
+    const json = JSON.stringify({ article: article})
+    res.send(json);
+    
 })
 
