@@ -1,0 +1,23 @@
+{
+  "name": "curious-cure-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbaisden25/curious-cure-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbaisden25/curious-cure-api/issues"
+  },
+  "homepage": "https://github.com/sbaisden25/curious-cure-api#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "node": "^17.7.2"
+  }
+}
