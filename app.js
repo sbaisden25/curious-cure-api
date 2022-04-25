@@ -24,7 +24,7 @@ function random_article() {
 }
 
 
-app.get("/random_article", (req, res) => {
+app.get("/", (req, res) => {
     res.json(url + random_article())
 })
 
