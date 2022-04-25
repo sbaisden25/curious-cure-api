@@ -23,8 +23,11 @@ function random_article() {
     return articles[Math.floor(Math.random() * articles.length)];
 }
 
-
 app.get("/", (req, res) => {
-    res.json(url + random_article())
+    res.send("Hello World!");
+})
+
+app.get("/yo", (req, res) => {
+    res.json.send(url + random_article())
 })
 
