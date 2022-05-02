@@ -1,5 +1,7 @@
 # curious-cure-api
 API that returns a random interesting wikipedia article
+
+![alt text](https://github.com/sbaisden25/curious-cure/blob/main/public/images/Screenshot.png)
  
  
 # example 
